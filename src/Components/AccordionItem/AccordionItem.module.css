@@ -124,7 +124,7 @@
   .arrowIcon {
     position: absolute; 
     top: 50%; 
-    left: 21rem;
+    left: 23rem;
     transform: translateY(-50%);
     z-index: 100; 
     cursor: pointer; 
