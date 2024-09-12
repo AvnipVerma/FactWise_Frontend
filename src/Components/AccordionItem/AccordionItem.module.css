@@ -125,7 +125,7 @@
   .arrowIcon {
     position: absolute; /* Allows the arrow icon to be fixed relative to its container */
     top: 50%; /* Vertically centers the icon */
-    left: 21rem;
+    left: 23rem;
     /* right: 0.1rem; Fixes the icon to the right edge of the container */
     transform: translateY(-50%); /* Ensures the icon is vertically centered */
     z-index: 100; /* Keeps the icon above other elements */
