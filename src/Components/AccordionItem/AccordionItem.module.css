@@ -1,17 +1,16 @@
-/* AccordionItem.module.css */
+
 
 .accordionItem {
   /* display: flex; */
   
     width: 30%;
     /* height: 9vh; */
-    /* background-color: #f9f9f9; Background for each box */
+
     padding: 0.5rem; 
-    border: 2px solid #C0C0C0; /* Border around each box */
-    border-radius: 0.8rem; /* Smooth, rounded corners */
-    /* margin: 20px 0; Spacing between each item */
+    border: 2px solid #C0C0C0; 
+    border-radius: 0.8rem;
     margin-bottom: 1rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .accordionHeader {
@@ -91,7 +90,7 @@
     height: 3rem;
     width: 3rem;
     /* padding: 1rem; */
-    border: 1px solid #C0C0C0; /* Border around each box */
+    border: 1px solid #C0C0C0; 
 
   }
   .container22222{
@@ -123,13 +122,12 @@
   }
   
   .arrowIcon {
-    position: absolute; /* Allows the arrow icon to be fixed relative to its container */
-    top: 50%; /* Vertically centers the icon */
-    left: 23rem;
-    /* right: 0.1rem; Fixes the icon to the right edge of the container */
-    transform: translateY(-50%); /* Ensures the icon is vertically centered */
-    z-index: 100; /* Keeps the icon above other elements */
-    cursor: pointer; /* Changes the cursor to pointer for better UX */
+    position: absolute; 
+    top: 50%; 
+    left: 21rem;
+    transform: translateY(-50%);
+    z-index: 100; 
+    cursor: pointer; 
   }
 
   .modal {
@@ -141,18 +139,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
-    z-index: 999; /* ensure the modal is above other content */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; 
   }
   
   .modalContent {
     background-color: #fff;
     border-radius: 0.5rem;
-    border: 2px solid #C0C0C0; /* Border around each box */
+    border: 2px solid #C0C0C0;  
     padding: 20px;
     width: 34%;
     height: 16vh;
-    /* text-align: center; */
+   
     position: relative;
   }
   
@@ -168,14 +166,14 @@
   
   .confirmText {
     font-size: 1rem;
-    /* margin-bottom: 20px; */
+
     padding-bottom: 3rem;
     color: #333;
   }
   
   .buttonGroup {
     display: flex;
-    /* justify-content: space-between; */
+ 
     justify-content: flex-end;
     gap: 1rem;
   }
@@ -190,10 +188,10 @@
   }
   
   .cancelButton {
-    border: 2px solid #C0C0C0; /* Border around each box */
+    border: 2px solid #C0C0C0; 
 
     background-color: white;
-    /* color: #333; */
+ 
   }
   
   .cancelButton:hover {
@@ -201,11 +199,11 @@
   }
   
   .deleteButton {
-    background-color: #e74c3c; /* red color for delete */
+    background-color: #e74c3c; 
     color: white;
   }
   
   .deleteButton:hover {
-    background-color: #c0392b; /* darker red on hover */
+    background-color: #c0392b; 
   }
   

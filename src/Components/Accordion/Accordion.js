@@ -4,7 +4,7 @@ import styles from "./Accordion.module.css";
 
 const Accordion = ({ users }) => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [userList, setUserList] = useState(users); // Store users in state
+  const [userList, setUserList] = useState(users);
   const [isEditing, setIsEditing] = useState(false);
 
   const handleAccordionClick = (index) => {
@@ -18,9 +18,9 @@ const Accordion = ({ users }) => {
   };
 
   const handleDeleteUser = (userId) => {
-    // Remove user from the list
+  
     const updatedUsers = userList.filter(user => user.id !== userId);
-    setUserList(updatedUsers); // Update state with the new list
+    setUserList(updatedUsers); 
   };
 
   return (
@@ -32,7 +32,7 @@ const Accordion = ({ users }) => {
           isOpen={activeIndex === index}
           onClick={() => handleAccordionClick(index)}
           onEditStatusChange={handleEditStatus}
-          onDelete={handleDeleteUser}  // Pass the onDelete function here
+          onDelete={handleDeleteUser}
           className={styles.accordionItemBox}
         />
       ))}

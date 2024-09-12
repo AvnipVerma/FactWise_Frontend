@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styles from './UserForm.module.css';
-import tick from "../../assets/tick.png";  // Tick icon for Save
-import cross from "../../assets/cross.png";  // Cross icon for Cancel
+import tick from "../../assets/tick.png";  
+import cross from "../../assets/cross.png"; 
 
 const UserForm = ({ user, setUser, toggleEdit }) => {
   const [formData, setFormData] = useState({ ...user });
   const [isSaveDisabled, setSaveDisabled] = useState(true);
 
   useEffect(() => {
-    // Check if all fields are filled and form data has changed
+
     const isValid = Object.values(formData).every(field => field !== '');
     setSaveDisabled(!isValid || JSON.stringify(formData) === JSON.stringify(user));
   }, [formData, user]);
@@ -31,16 +31,15 @@ const UserForm = ({ user, setUser, toggleEdit }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Handle age input: only allow numbers
+
     if (name === "age" && !/^\d*$/.test(value)) return;
 
-    // Handle country input: only allow letters and spaces
+   
     if (name === "country" && !/^[a-zA-Z\s]*$/.test(value)) return;
 
     setFormData(prevState => {
       const updatedFormData = { ...prevState, [name]: value };
 
-      // Update date of birth when age changes
       if (name === "age") {
         const dob = calculateDobFromAge(value);
         updatedFormData.dob = dob;
@@ -50,13 +49,12 @@ const UserForm = ({ user, setUser, toggleEdit }) => {
     });
   };
 
-  // Calculate age from date of birth for display
   const age = formData.dob ? calculateAgeFromDob(formData.dob) : formData.age || '';
 
   return (
     <form className={styles.form}>
       <div className={styles.container}>
-        {/* Editable Age */}
+        
         <div className={styles.inputGroup1}>
           <div className={styles.div}>Age: </div>
           <input

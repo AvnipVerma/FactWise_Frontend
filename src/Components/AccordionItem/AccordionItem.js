@@ -13,7 +13,7 @@ import blackcross from "../../assets/blackcross.png";
 const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [userData, setUserData] = useState({ ...user });
-  const [openbox, setOpenbox] = useState(false); // State for showing/hiding the BackgroundBlur
+  const [openbox, setOpenbox] = useState(false);
 
   const toggleEdit = () => {
     setIsEditing(!isEditing);
@@ -21,18 +21,18 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
   };
 
   const handleDeleteClick = () => {
-    setOpenbox(true); // Open the BackgroundBlur when delete button is clicked
+    setOpenbox(true); 
   };
 
   const handleCancel = () => {
-    setOpenbox(false); // Close the BackgroundBlur when cancel is clicked
+    setOpenbox(false); 
   };
 
   const handleConfirmDelete = () => {
     if (onDelete) {
-      onDelete(userData.id); // Call the delete function from the parent component
+      onDelete(userData.id);
     }
-    setOpenbox(false); // Close the delete modal
+    setOpenbox(false); 
   };
 
   return (
@@ -88,7 +88,7 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
             </div>
           )}
 
-          {/* Render the BackgroundBlur modal when openbox is true */}
+          
           {openbox && (
             <BackgroundBlur>
               <div className={styles.modal}>

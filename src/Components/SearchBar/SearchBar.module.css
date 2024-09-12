@@ -3,7 +3,7 @@
 }
 .searchbarrr{
     margin-bottom: 1rem;
-    border: 2px solid #C0C0C0; /* Border around each box */
+    border: 2px solid #C0C0C0; 
     height: 3vh;
     border-radius: 0.5rem;
     width: 46%;
@@ -14,10 +14,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
-    border: 2px solid #C0C0C0; /* Border around each box */
+    border: 2px solid #C0C0C0; 
     height: 6vh;
     border-radius: 0.5rem;
-    width: 46%;
+    width: 30%;
     padding-left: 0.5rem;
   }
   
