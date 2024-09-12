@@ -25,13 +25,13 @@ function App() {
     <div className={styles.container}>
       <div className={styles.container2}>
         <div className={styles.heading}>List View</div>
-        <SearchBar onSearch={handleSearch} /> {/* Pass handleSearch to SearchBar */}
+        <SearchBar onSearch={handleSearch} />
       </div>
       <div className={styles.app}>
         {filteredUsers.length > 0 ? (
           <Accordion users={filteredUsers} /> 
         ) : (
-          <p>No results found</p> // Display message when no users are found
+          <p>No results found</p> 
         )}
       </div>
     </div>
