@@ -1,0 +1,37 @@
+.searchbar{
+
+}
+.searchbarrr{
+    margin-bottom: 1rem;
+    border: 2px solid #C0C0C0; /* Border around each box */
+    height: 3vh;
+    border-radius: 0.5rem;
+    width: 46%;
+    padding-left: 0.5rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 2px solid #C0C0C0; /* Border around each box */
+    height: 6vh;
+    border-radius: 0.5rem;
+    width: 46%;
+    padding-left: 0.5rem;
+  }
+  
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  .searchInput {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  

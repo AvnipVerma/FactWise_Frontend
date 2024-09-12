@@ -1,0 +1,211 @@
+/* AccordionItem.module.css */
+
+.accordionItem {
+  /* display: flex; */
+  
+    width: 30%;
+    /* height: 9vh; */
+    /* background-color: #f9f9f9; Background for each box */
+    padding: 0.5rem; 
+    border: 2px solid #C0C0C0; /* Border around each box */
+    border-radius: 0.8rem; /* Smooth, rounded corners */
+    /* margin: 20px 0; Spacing between each item */
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .accordionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .accordionContent {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .editMode {
+    border-color: #007bff;
+  }
+  .container{
+    display: flex;
+    gap: 5rem;
+    padding-bottom: 1.2rem;
+  }
+  .age{
+    color: #A0A0A0;
+    padding-bottom: 0.3rem;
+    /* font-weight: bold; */
+  }
+  .gender{
+    color: #A0A0A0;
+    padding-bottom: 0.3rem;
+  }
+  .country{
+    color: #A0A0A0;
+    padding-bottom: 0.3rem;
+  }
+  .description{
+    color: #A0A0A0;
+    padding-bottom: 0.3rem;
+  }
+  .edit{
+    border: none;    
+    background: none;          
+    outline: none;         
+    padding: 0;                  
+    margin: 0;                              
+    cursor: pointer;             
+    text-decoration: none; 
+  }
+  .delete{
+    border: none;    
+    background: none;          
+    outline: none;         
+    padding: 0;                  
+    margin: 0;                              
+    cursor: pointer;             
+    text-decoration: none;
+  }
+  .imgedit{
+    /* padding-left: 2rem; */
+    width: 2rem;
+    height: 1.8rem;
+  }
+  .deleteimg{
+    width: 2rem;
+    height: 2.2rem;
+  }
+  .container2222{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content:flex-end;
+    /* align-items: flex-end; */
+  }
+  .icon{
+    background-color: white;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    /* padding: 1rem; */
+    border: 1px solid #C0C0C0; /* Border around each box */
+
+  }
+  .container22222{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .text{
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: black;
+
+  }
+  .first{
+    /* font-size: 1rem; */
+  }
+  .firstlast{
+    display: flex;
+    gap: 0.3rem;
+  }
+  .container222{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    padding: 0.5rem;
+  }
+  
+  .arrowIcon {
+    position: absolute; /* Allows the arrow icon to be fixed relative to its container */
+    top: 50%; /* Vertically centers the icon */
+    left: 21rem;
+    /* right: 0.1rem; Fixes the icon to the right edge of the container */
+    transform: translateY(-50%); /* Ensures the icon is vertically centered */
+    z-index: 100; /* Keeps the icon above other elements */
+    cursor: pointer; /* Changes the cursor to pointer for better UX */
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    z-index: 999; /* ensure the modal is above other content */
+  }
+  
+  .modalContent {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 2px solid #C0C0C0; /* Border around each box */
+    padding: 20px;
+    width: 34%;
+    height: 16vh;
+    /* text-align: center; */
+    position: relative;
+  }
+  
+  .blackcross {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: #A0A0A0;
+  }
+  
+  .confirmText {
+    font-size: 1rem;
+    /* margin-bottom: 20px; */
+    padding-bottom: 3rem;
+    color: #333;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .cancelButton, .deleteButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancelButton {
+    border: 2px solid #C0C0C0; /* Border around each box */
+
+    background-color: white;
+    /* color: #333; */
+  }
+  
+  .cancelButton:hover {
+    background-color: #aaa;
+  }
+  
+  .deleteButton {
+    background-color: #e74c3c; /* red color for delete */
+    color: white;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c0392b; /* darker red on hover */
+  }
+  
