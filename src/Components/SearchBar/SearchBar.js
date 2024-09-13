@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styles from './SearchBar.module.css';
-import searchIcon from '../../assets/search.png'; 
+import searchIcon from '../../assets/search.png';
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   const handleChange = (e) => {
-    setQuery(e.target.value);
-    onSearch(e.target.value);
+    const searchQuery = e.target.value;
+    setQuery(searchQuery);  
+    onSearch(searchQuery);  
   };
 
   return (
@@ -17,7 +18,7 @@ const SearchBar = ({ onSearch }) => {
         type="text"
         placeholder="Search User"
         value={query}
-        onChange={handleChange}
+        onChange={handleChange}  
         className={styles.searchInput}
       />
     </div>

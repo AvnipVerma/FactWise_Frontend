@@ -15,19 +15,23 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
   const [userData, setUserData] = useState({ ...user });
   const [openbox, setOpenbox] = useState(false);
 
+  // Toggle editing state
   const toggleEdit = () => {
     setIsEditing(!isEditing);
     onEditStatusChange(!isEditing);
   };
 
+  // Open delete confirmation modal
   const handleDeleteClick = () => {
     setOpenbox(true); 
   };
 
+  // Close delete confirmation modal
   const handleCancel = () => {
     setOpenbox(false); 
   };
 
+  // Confirm delete action and close modal
   const handleConfirmDelete = () => {
     if (onDelete) {
       onDelete(userData.id);
@@ -55,6 +59,7 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
           </div>
         </div>
       </div>
+
       {isOpen && (
         <div className={styles.accordionContent}>
           {isEditing ? (
@@ -77,6 +82,8 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
               </div>
               <div className={styles.description}>Description</div>
               <div>{userData.description}</div>
+
+              {/* Edit and Delete Buttons */}
               <div className={styles.container2222}>
                 <button className={styles.delete} onClick={handleDeleteClick}>
                   <img src={bin} className={styles.deleteimg} alt="Delete" />
@@ -88,7 +95,7 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
             </div>
           )}
 
-          
+          {/* Delete Confirmation Modal */}
           {openbox && (
             <BackgroundBlur>
               <div className={styles.modal}>
@@ -99,7 +106,9 @@ const AccordionItem = ({ user, isOpen, onClick, onEditStatusChange, onDelete }) 
                     alt="Cancel"
                     onClick={handleCancel}
                   />
-                  <div className={styles.confirmText}>Are you sure you want to delete?</div>
+                  <div className={styles.confirmText}>
+                    Are you sure you want to delete?
+                  </div>
                   <div className={styles.buttonGroup}>
                     <button onClick={handleCancel} className={styles.cancelButton}>
                       Cancel
